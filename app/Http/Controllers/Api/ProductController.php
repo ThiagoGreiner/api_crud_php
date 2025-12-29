@@ -28,7 +28,7 @@ class ProductController extends Controller
             'stock' => 'required|integer|min:0',
         ]);
 
-        return Product::created(($request->all()));
+        return Product::create($request->all());
     }
 
     /**
